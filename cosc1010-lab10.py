@@ -1,7 +1,7 @@
-# Your Name Here
+# Koen Myers
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
+# 11/20/24
+# Lab 15
 # Lab Section: 
 # Sources, people worked with, help given to: 
 # your
@@ -17,8 +17,24 @@ def get_hash(to_hash):
     """You can use """
     return sha256(to_hash.encode('utf-8')).hexdigest().upper()
 
+from pathlib import Path
+
+try:
+    path=Path('rockyou.txt')
+    pathed=Path('hash')
+    hashed=pathed.read_text()
+    contents=path.read_text()
+except:
+    print('Wrong File Inputed')
 
 
+content=contents.split('\n')
+
+for n in content: 
+    if get_hash(n)==hashed:
+            print(f"Your Password is {n}")
+            break
+    
 # Files and Exceptions
 
 # For this assignment, you will be writing a program to "crack" a password. You will need to open the file `hash` as this is the password you are trying to "crack."
