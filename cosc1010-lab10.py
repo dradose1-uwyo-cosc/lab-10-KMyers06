@@ -3,7 +3,7 @@
 # 11/20/24
 # Lab 15
 # Lab Section: 
-# Sources, people worked with, help given to: Emmanual
+# Sources, people worked with, help given to: Emmanual, Brandon
 # your
 # comments
 # here
